@@ -88,7 +88,7 @@ SDL must:
 - NOT transfer this request to HMI  
 
 #### 9.
-In case mobile application sends UnsubscribeVehicleData_request to SDL  
+In case mobile application sends SubscribeVehicleData_request to SDL  
 
 and this request is allowed by Policies for this mobile application  
 
