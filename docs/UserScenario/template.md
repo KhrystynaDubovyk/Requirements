@@ -13,8 +13,8 @@ e.g.
 Scenario:
 Josh is a 30 something mid-level manager for an ad agency, metro-sexual and beer aficionado. He likes to try new and exotic beers in trendy locations. He also enjoys using a variety of social apps on his smart phone. He reads a review on Yelp of a new burger & beer joint downtown with over 100 beers on tap, and decides to go walk over after work and check it out.
 
-**(b) A second type of user scenario that I've identified is  
-the type to validate a design and design assumptions.**  
+#### (b) A second type of user scenario that I've identified is  
+**the type to validate a design and design assumptions.**  
 You've created a user interface design and employing a real-world narrative helps you see whether the path that the user takes is realistic or not.  
 Does it seem reasonable that they do X when presented with Y in trying to accomplish Z?  
 We can tell a lot about the sensibility of your designs as we match up the design to a real scenario.  
