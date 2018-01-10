@@ -25,7 +25,7 @@ _Expected:_
 9. HMI sends the notification to SDL with the changes in VehicleData
 10. SDL transfers the notification to subscribed application
 
-_[please see the respective TRS]()_ 
+_please see the respective TRS_ [#1](https://github.com/KhrystynaDubovyk/Requirements/blob/subscribe_vd/docs/API/VehicleInfo/SubscribeVehicleData_TRS.md#1) 
 
 **Exception 1**
 
@@ -33,7 +33,6 @@ _[please see the respective TRS]()_
 
 2.a.2 SDL responds INVALID_DATA, success:false to mobile application and doesn't subscribe to vehicle data change notifications
 
-_[please see the respective TRS]()_ 
 
 **Exception 2**
 
@@ -41,14 +40,19 @@ _[please see the respective TRS]()_
 
 3.a.2 SDL responds DISALLOWED, success:false to mobile app and doesn't subscribe to vehicle data change notifications  
 
-_[please see the respective TRS]()_ 
+_please see the relative TRSs_ 
+[#4](https://github.com/KhrystynaDubovyk/Requirements/blob/subscribe_vd/docs/API/VehicleInfo/SubscribeVehicleData_TRS.md#4),
+[#7](https://github.com/KhrystynaDubovyk/Requirements/blob/subscribe_vd/docs/API/VehicleInfo/SubscribeVehicleData_TRS.md#7),
+[#8](https://github.com/KhrystynaDubovyk/Requirements/blob/subscribe_vd/docs/API/VehicleInfo/SubscribeVehicleData_TRS.md#8),
+[#9](https://github.com/KhrystynaDubovyk/Requirements/blob/subscribe_vd/docs/API/VehicleInfo/SubscribeVehicleData_TRS.md#9)
 
 **Exception 3**  
 6.a.1 SDL receives erroneous result from HMI for the parameter  
 
 6.a.2 SDL responds success:false to mobile application and doesn't store the param in list
 
-_[please see the respective TRS]()_ 
+_please see the respective TRS_ [#2](https://github.com/KhrystynaDubovyk/Requirements/blob/subscribe_vd/docs/API/VehicleInfo/SubscribeVehicleData_TRS.md#2) 
+
 ## Use Case 2: Mobile application is already subscribed to VehicleData
 
 **Main Flow:**
@@ -70,7 +74,8 @@ _Expected:_
 2. SDL responds with result code IGNORED, success:false to mobile application
 3. SDL keeps the subscription status of the application unchanged
 
-_[please see the respective TRS]()_ 
+_please see the relative TRSs_ [#5](https://github.com/KhrystynaDubovyk/Requirements/blob/subscribe_vd/docs/API/VehicleInfo/SubscribeVehicleData_TRS.md#5),
+[#6](https://github.com/KhrystynaDubovyk/Requirements/blob/subscribe_vd/docs/API/VehicleInfo/SubscribeVehicleData_TRS.md#6)
 
 **Alternative flow**  
 
@@ -84,4 +89,4 @@ _Expected:_
 
 1.a.4 SDL transfers stored in SDL list VehicleData parameters to mobile application_2 
 
-_[please see the respective TRS]()_ 
+_please see the respective TRS_ [#3](https://github.com/KhrystynaDubovyk/Requirements/blob/subscribe_vd/docs/API/VehicleInfo/SubscribeVehicleData_TRS.md#3) 
