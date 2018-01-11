@@ -12,6 +12,7 @@ SDL must:
 SDL must store this param in list 
 - respond with corresponding result SUCCESS received from HMI to app_1
 
+_please see relative [SDL state chart](https://github.com/KhrystynaDubovyk/Requirements/blob/subscribe_vd/docs/State/SubscribeVehicleData_state_change.md#state_1)_
 #### 2.  
 In case app_1 sends SubscribeVehicleData (param_1) to SDL  
 
@@ -32,6 +33,8 @@ SDL must:
 
 - NOT send SubscribeVehicleData(param_1, param_2) to HMI  
 - respond via SubscribeVehicleData (SUCCESS) to app_2  
+
+_please see relative [SDL state chart](https://github.com/KhrystynaDubovyk/Requirements/blob/subscribe_vd/docs/State/SubscribeVehicleData_state_change.md#state_2)_
 
 #### 4.
 In case mobile application sends SubscribeVehicleData_request  
