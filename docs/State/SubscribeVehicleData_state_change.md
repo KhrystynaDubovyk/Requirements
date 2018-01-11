@@ -27,6 +27,8 @@ SDL more than one subscribed applications in SDL list
 State3: SDL must transfer the unsubscription request for app_1 to HMI   
 and send subscription request to HMI for app_2 (meaning for any other application which is the next one in the list of subscribed apps)
 
+### SubscribeVehicleData state change
+
 #### State_1
 
 ||app_1|app_2|SDL|
@@ -39,5 +41,20 @@ and send subscription request to HMI for app_2 (meaning for any other applicatio
 ||app_1|app_2|SDL|
 |---|---|---|---|
 |**Initial state**|subscribed<br>receives VD change notifications|not subscribed|has app_1 in the list of subscribed applications<br> has stored VD params|
-|**Input**|-|sends a request to subscribe|doesn’t transfer this request to HMI but subscribes this application internally|
+|**Input**|-|sends a request to subscribe|doesn’t transfer this request to HMI but subscribes app_2 internally|
 |**Changed state**|subscribed<br>receives VD change notifications|subscribed<br>receives VD change notifications|has app_1, app_2 in the list of subscribed applications<br> has stored VD params|
+
+### UnsubscribeVehicleData state change
+#### State_1
+||app_1|app_2|SDL|
+|---|---|---|---|
+|**Initial state**|subscribed<br>receives VD change notifications|not subscribed|has app_1 in the list of subscribed applications<br> has stored VD params|
+|**Input**|sends a request to unsubscribe|-|-|
+|**Changed state**|not subscribed<br> does not receive VD change notifications|not subscribed|has no subscribed app in internal list<br> has no stored VD params|
+
+#### State_2
+||app_1|app_2|SDL|
+|---|---|---|---|
+|**Initial state**|subscribed<br>receives VD change notifications|subscribed<br>receives VD change notifications|has app_1, app_2 in the list of subscribed applications<br> has stored VD params|
+|**Input**|-|sends a request to unsubscribe|doesn’t transfer this request to HMI but unsubscribes app_2 internally|
+|**Changed state**|subscribed<br>receives VD change notifications|not subscribed|has app_1 in the list of subscribed applications<br> has stored VD params|
