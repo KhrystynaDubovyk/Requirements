@@ -90,3 +90,7 @@ _Expected:_
 1.a.4 SDL transfers stored in SDL list VehicleData parameters to mobile application_2 
 
 _please see the respective TRS_ [#3](https://github.com/KhrystynaDubovyk/Requirements/blob/subscribe_vd/docs/API/VehicleInfo/SubscribeVehicleData_TRS.md#3) 
+
+## Diagram
+SubscribeVehicleData 
+![SubscribeVehicleData](https://github.com/KhrystynaDubovyk/Requirements/blob/subscribe_vd/docs/UseCase/assets/SubscribeVehicleData.png)
