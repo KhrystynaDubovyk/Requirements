@@ -29,3 +29,5 @@
 |**Initial state**|subscribed<br>receives VD change notifications|subscribed<br>receives VD change notifications|has app_1, app_2 in the list of subscribed applications<br> has stored VD params|
 |**Input**|-|sends a request to unsubscribe|doesn’t transfer this request to HMI but unsubscribes app_2 internally|
 |**Changed state**|subscribed<br>receives VD change notifications|not subscribed|has app_1 in the list of subscribed applications<br> has stored VD params|
+
+https://adc.luxoft.com/confluence/display/APPLINK/SubscribeVehicleData+State+diagram
