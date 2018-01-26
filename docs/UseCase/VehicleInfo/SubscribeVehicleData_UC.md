@@ -26,7 +26,7 @@ _Expected:_
 9. HMI sends the notification to SDL with the changes in VehicleData
 10. SDL transfers the notification to subscribed application
 
-_please see the respective TRS_ [#1](https://github.com/KhrystynaDubovyk/Requirements/blob/subscribe_vd/docs/API/VehicleInfo/SubscribeVehicleData_TRS.md#1) 
+_please see the respective TRS_ [#1](https://github.com/KhrystynaDubovyk/Requirements/blob/subscribe_vd/docs/API/VehicleInfo/SubscribeVehicleData_TRS.md#1)  
 _please see the respective State_ [SubscribeVehicleData_State]()
 
 **Exception 1**
