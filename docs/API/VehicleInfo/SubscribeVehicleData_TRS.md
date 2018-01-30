@@ -101,6 +101,8 @@ SDL must:
 - transfer received request with all requested parameters as is to HMI  
 - respond with `<received_resultCode_from_HMI>` to mobile app
 
+## Activity Diagram
+![SubscribeVehicleData](https://github.com/KhrystynaDubovyk/Requirements/blob/subscribe_vd/docs/API/assets/SubscribeVD_flowchart.png)
 
 ## Non-Functional Requirements
 ### Mobile API
